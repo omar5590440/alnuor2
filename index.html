@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النور لحسبات البناء و التشييد</title>
+    <meta name="description" content="موقع ويب تفاعلي ذكي لحساب احتياجات البناء بدقة وسرعة مقدم من  مجموعة النور  جروب">
+    <meta name="keywords" content="حساب مواد البناء, حساب السقف, حساب الطوب, حساب المحارة, حساب البلاط, مهندس, مقاول">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Arabic Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-calculator"></i>
+                    <h1>النور لحسبات البناء و التشييد</h1>
+                    <span class="ai-badge">Powered by AI</span>
+                </div>
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active">الرئيسية</a>
+                    <a href="#calculators" class="nav-link">الحاسبات</a>
+                    <a href="#about" class="nav-link">عن الموقع</a>
+                    <a href="#contact" class="nav-link">تواصل معنا</a>
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <i class="fas fa-brain"></i>
+                    النور جروب
+                    <span class="ai-text">Powered by AI</span>
+                </h1>
+                <p class="hero-description">
+                    موقع مجاني لحساب تكاليف و مواد البناء مقدم من شركة النور جروب
+                </p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-calculator"></i>
+                        <span>حسابات دقيقة</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-download"></i>
+                        <span>تحميل PDF</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>متوافق مع الجوال</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-share-alt"></i>
+                        <span>مشاركة سهلة</span>
+                    </div>
+                </div>
+                <a href="#calculators" class="cta-button">
+                    <i class="fas fa-rocket"></i>
+                    ابدأ الحساب الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculators Section -->
+    <section id="calculators" class="calculators">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-tools"></i>
+                حاسبات البناء الذكية
+            </h2>
+            <p class="section-description">اختر نوع الحساب المطلوب وابدأ في حساب احتياجاتك بدقة</p>
+            
+            <div class="calculators-grid">
+                <!-- Calculator 1: السقف -->
+                <div class="calculator-card" data-calculator="ceiling">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="card-title">حساب السقف</h3>
+                    <p class="card-description">احسب كمية الحديد، الأسمنت، الرمل، السن، والمياه المطلوبة لصب سقف بمقاسات بيتك</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> إدخال الأبعاد (الطول × العرض × السمك)</li>
+                        <li><i class="fas fa-check"></i> اختيار نوع السقف</li>
+                        <li><i class="fas fa-check"></i> تقسيط الحديد المرن</li>
+                        <li><i class="fas fa-check"></i> عرض التكلفة التقريبية</li>
+                    </ul>
+                    <button class="card-button">
+                        <i class="fas fa-calculator"></i>
+                        ابدأ الحساب
+                    </button>
+                </div>
+
+                <!-- Calculator 2: الطوب -->
+                <div class="calculator-card" data-calculator="brick">
+                    <div class="card-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3 class="card-title">حساب الطوب</h3>
+                    <p class="card-description">احسب كمية الطوب المطلوبة لبناء جدران بيتك مع أنواع الطوب المختلفة</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> إدخال مساحة الحوائط</li>
+                        <li><i class="fas fa-check"></i> تحديد نوع الطوب</li>
+                        <li><i class="fas fa-check"></i> حساب عدد الطوبات</li>
+                        <li><i class="fas fa-check"></i> كمية المونة المطلوبة</li>
+                    </ul>
+                    <button class="card-button">
+                        <i class="fas fa-calculator"></i>
+                        ابدأ الحساب
+                    </button>
+                </div>
+
+                <!-- Calculator 3: المحارة -->
+                <div class="calculator-card" data-calculator="plaster">
+                    <div class="card-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3 class="card-title">حساب المحارة</h3>
+                    <p class="card-description">احسب كمية الأسمنت والرمل لمحارة كل جدرانك بدقة عالية</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> إدخال مساحة الحوائط</li>
+                        <li><i class="fas fa-check"></i> اختيار سمك المحارة</li>
+                        <li><i class="fas fa-check"></i> حساب تلقائي للمونة</li>
+                        <li><i class="fas fa-check"></i> طباعة أو حفظ الكميات</li>
+                    </ul>
+                    <button class="card-button">
+                        <i class="fas fa-calculator"></i>
+                        ابدأ الحساب
+                    </button>
+                </div>
+
+                <!-- Calculator 4: البلاط -->
+                <div class="calculator-card" data-calculator="tiles">
+                    <div class="card-icon">
+                        <i class="fas fa-border-all"></i>
+                    </div>
+                    <h3 class="card-title">حساب البلاط</h3>
+                    <p class="card-description">احسب عدد البلاطات المطلوبة مع الأسمنت والرمل حسب نوع البلاط</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> اختيار نوع البلاط</li>
+                        <li><i class="fas fa-check"></i> إدخال المساحة</li>
+                        <li><i class="fas fa-check"></i> نسبة الهدر والكسر</li>
+                        <li><i class="fas fa-check"></i> طريقة التركيب</li>
+                    </ul>
+                    <button class="card-button">
+                        <i class="fas fa-calculator"></i>
+                        ابدأ الحساب
+                    </button>
+                </div>
+
+                <!-- Calculator 5: الأعمدة والقواعد -->
+                <div class="calculator-card" data-calculator="columns">
+                    <div class="card-icon">
+                        <i class="fas fa-columns"></i>
+                    </div>
+                    <h3 class="card-title">حساب الأعمدة والقواعد</h3>
+                    <p class="card-description">للمستخدم المتقدم: يحسب خرسانة الأعمدة والقواعد وكمية الحديد</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> اختيار نوع العنصر</li>
+                        <li><i class="fas fa-check"></i> إدخال الأبعاد</li>
+                        <li><i class="fas fa-check"></i> جدول تلقائي بالمواد</li>
+                        <li><i class="fas fa-check"></i> حسابات هندسية متقدمة</li>
+                    </ul>
+                    <button class="card-button">
+                        <i class="fas fa-calculator"></i>
+                        ابدأ الحساب
+                    </button>
+                </div>
+
+                <!-- Calculator 6: التخزين والتحميل -->
+                <div class="calculator-card" data-calculator="storage">
+                    <div class="card-icon">
+                        <i class="fas fa-cloud-download-alt"></i>
+                    </div>
+                    <h3 class="card-title">التخزين والتحميل</h3>
+                    <p class="card-description">احفظ وحمل نتائج حساباتك وشاركها مع المهندس أو المقاول</p>
+                    <ul class="card-features">
+                        <li><i class="fas fa-check"></i> تحميل ملخص PDF</li>
+                        <li><i class="fas fa-check"></i> حفظ على الموبايل</li>
+                        <li><i class="fas fa-check"></i> إرسال واتساب/إيميل</li>
+                        <li><i class="fas fa-check"></i> مشاركة الحسابات</li>
+                    </ul>
+                    <button class="card-button">
+                        <i class="fas fa-folder-open"></i>
+                        إدارة الملفات
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Modal -->
+    <div id="calculatorModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">حاسبة البناء</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Calculator content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat Assistant -->
+    <div id="aiChatBot" class="chat-bot">
+        <div class="chat-toggle" id="chatToggle">
+            <i class="fas fa-robot"></i>
+        </div>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h4>مساعد ذكي للبناء</h4>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    مرحباً! أنا مساعدك الذكي. كيف يمكنني مساعدتك في حسابات البناء؟
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="اكتب سؤالك هنا...">
+                <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>النور جروب </h3>
+                    <p>موقع ويب تفاعلي ذكي لحساب احتياجات البناء بدقة وسرعة</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#calculators">الحاسبات</a></li>
+                        <li><a href="#about">عن الموقع</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025  النور جروب. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/calculators.js"></script>
+    <script src="assets/js/ai-chat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>

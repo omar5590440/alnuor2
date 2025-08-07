@@ -1,0 +1,33 @@
+{
+  "name": "حساباتي-للبناء",
+  "version": "1.0.0",
+  "description": "موقع ويب تفاعلي ذكي لحساب احتياجات البناء - Powered by AI",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/style.min.css assets/css/style.css",
+    "minify-js": "uglifyjs assets/js/*.js -o dist/app.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "بناء",
+    "حسابات",
+    "مواد-بناء",
+    "ذكاء-اصطناعي",
+    "مهندس",
+    "مقاول"
+  ],
+  "author": "حساباتي للبناء",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4"
+  },
+  "dependencies": {
+    "jspdf": "^2.5.1",
+    "html2canvas": "^1.4.1",
+    "chart.js": "^4.4.0"
+  }
+}
